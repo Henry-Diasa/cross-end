@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<text>feeds23</text>
+		<text>feeds</text>
 	</view>
 </template>
 
