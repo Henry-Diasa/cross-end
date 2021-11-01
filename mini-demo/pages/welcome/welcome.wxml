@@ -1,0 +1,10 @@
+<!--pages/welcome/welcome.wxml-->
+
+<view class="container">
+  <image class="avatar" src="/images/avatar.jpg"></image>
+  <!-- <l-avatar placement="bottom" open-data="{{['userAvatarUrl', 'userNickName']}}"></l-avatar> -->
+  <text class="motto">hello henry</text>
+  <view class="journey-container">
+    <text class="journey">开启小程序之旅</text>
+  </view>
+</view>

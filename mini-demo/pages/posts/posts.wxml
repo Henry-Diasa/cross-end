@@ -1,0 +1,31 @@
+<view>
+  <swiper circular interval="2000" indicator-dots="{{true}}" autoplay="{{true}}">
+    <swiper-item>
+      <image src="/images/swiper1.webp"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/swiper2.webp"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/swiper3.webp"></image>
+    </swiper-item>
+  </swiper>
+ 
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-author" src="{{headImgSrc}}"></image>
+      <text class="post-date">{{dateTime}}</text>
+    </view>
+    <text class="post-title">{{title}}</text>
+    <image class="post-image" src="{{imgSrc}}"></image>
+    <text class="post-content">{{content}}</text>
+    <view class="post-like">
+      <!-- <image class="post-like-image" src="/images/star.png"></image> -->
+      <l-icon name="favor" size="32" color="#666"></l-icon>
+      <text class="post-like-font">{{collection}}</text>
+      <!-- <image class="post-like-image" src="/images/chat.png"></image> -->
+      <l-icon name="eye" size="32" color="#666"></l-icon>
+      <text class="post-like-font">{{reading}}</text>
+    </view>
+  </view>
+</view>
