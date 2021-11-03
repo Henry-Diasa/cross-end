@@ -11,7 +11,7 @@
     </swiper-item>
   </swiper>
   <block wx:for="{{posts}}" wx:key="index" wx:for-item="item" wx:for-index="index">
-    <view class="post-container">
+    <view class="post-container" bind:tap="gotoDetail" data-id="{{item.id}}">
       <view class="post-author-date">
         <image class="post-author" src="{{item.headImgSrc}}"></image>
         <text class="post-date" wx:if="{{item.flag}}">{{item.dateTime}}</text>

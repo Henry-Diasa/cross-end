@@ -1,29 +1,20 @@
-// pages/posts/posts.js
-import {
-  posts
-} from '../../data/data'
+// pages/post-detail/post-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    a: '2020LPL季后赛'
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      posts
-    })
+
   },
-  gotoDetail(event) {
-    wx.navigateTo({
-      url: '/pages/post-detail/post-detail',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -56,7 +47,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    console.log('onPullDownRefresh')
+
   },
 
   /**
