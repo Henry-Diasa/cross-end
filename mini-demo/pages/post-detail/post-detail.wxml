@@ -1,20 +1,20 @@
 <view class="container">
-  <image class="head-image" src="/images/swiper3.webp"></image>
+  <image class="head-image" src="{{postData.imgSrc}}"></image>
   <view class="author-date">
-    <image class="avatar" src="/images/avatar.jpg"></image>
-    <text class="author">henry</text>
+    <image class="avatar" src="{{postData.headImgSrc}}"></image>
+    <text class="author">{{postData.author}}</text>
     <text class="const-text">发表于</text>
-    <text class="date">4月前</text>
+    <text class="date">{{postData.dateTime}}</text>
   </view>
 
-  <text class="title">LPL最佳阵容</text>
+  <text class="title">{{postData.title}}</text>
 
   <view class="tool">
     <view class="circle">
+      <image wx-if="{{!collected}}" bind:tap="onCollect" class="circle-image" src="/images/star.png"></image>
       <image class="circle-image" src="/images/chat.png"></image>
-      <image class="circle-image" src="/images/star.png"></image>
     </view>
     <view class="circle-line"></view>
   </view>
-  <text>LPL最佳阵容LPL最佳阵容LPL最佳阵容LPL最佳阵容LPL最佳阵容LPL最佳阵容</text>
+  <text>{{postData.content}}</text>
 </view>

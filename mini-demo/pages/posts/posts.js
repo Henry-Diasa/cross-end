@@ -15,13 +15,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // wx.setStorageSync('flag', true);
+    // wx.removeStorageSync('flag')
     this.setData({
       posts
     })
   },
   gotoDetail(event) {
+    const id = event.currentTarget.dataset.id;
+    console.log(id);
     wx.navigateTo({
-      url: '/pages/post-detail/post-detail',
+      url: `/pages/post-detail/post-detail?pid=${id}`,
     })
   },
   /**

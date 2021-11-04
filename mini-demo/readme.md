@@ -20,3 +20,25 @@ npm 安装后 还需要在 工具=> 构建npm才可以使用
 
 - bind:tap 不会阻止事件冒泡
 - catch:tap 会阻止事件冒泡
+
+### 全局变量
+
+```
+  const app = getApp();
+  console.log(app.test) // 1
+  App({
+    onLaunch() {
+
+    },
+    onShow() {
+
+    },
+    test: 1
+
+  })
+```
+### 缓存
+
+```
+  wx.setStorageSync('key', data)
+```
