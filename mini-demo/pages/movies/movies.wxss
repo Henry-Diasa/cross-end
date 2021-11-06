@@ -1,0 +1,4 @@
+/* pages/movies/movies.wxss */
+.movie-list {
+  margin-bottom: 20rpx;
+}

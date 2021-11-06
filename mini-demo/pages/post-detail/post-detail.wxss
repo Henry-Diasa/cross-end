@@ -62,4 +62,12 @@
   width: 90rpx;
   height: 90rpx;
 }
+.audio {
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  top: 175rpx;
+  margin-left: -51rpx;
+}
 

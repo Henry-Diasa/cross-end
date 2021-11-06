@@ -9,7 +9,7 @@ Page({
   },
   // 点击事件
   onTap() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/posts/posts',
     })
   },

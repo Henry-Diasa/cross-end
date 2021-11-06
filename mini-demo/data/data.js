@@ -9,6 +9,10 @@ const posts = [{
     headImgSrc: "/images/avatar.jpg",
     author: '猫',
     flag: true,
+    music: {
+      url: 'http://m10.music.126.net/20211106014032/de34c32303333531993228f8c0ba01a7/ymusic/3846/9e51/991b/189bce12f3b5e53aa029da75278ddafa.mp3',
+      title: '123123'
+    }
   },
   {
     id: 2,

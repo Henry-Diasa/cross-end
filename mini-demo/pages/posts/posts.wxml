@@ -1,15 +1,16 @@
 <view>
   <swiper circular interval="2000" indicator-dots="{{true}}" autoplay="{{true}}">
     <swiper-item>
-      <image src="/images/swiper1.webp"></image>
+      <image data-id="1" bind:tap="gotoDetail" src="/images/swiper1.webp"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/swiper2.webp"></image>
+      <image data-id="2" bind:tap="gotoDetail" src="/images/swiper2.webp"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/swiper3.webp"></image>
+      <image data-id="3" bind:tap="gotoDetail" src="/images/swiper3.webp"></image>
     </swiper-item>
   </swiper>
+  <post text="888"></post>
   <block wx:for="{{posts}}" wx:key="index" wx:for-item="item" wx:for-index="index">
     <view class="post-container" bind:tap="gotoDetail" data-id="{{item.id}}">
       <view class="post-author-date">

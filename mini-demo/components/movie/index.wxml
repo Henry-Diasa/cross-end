@@ -1,0 +1,8 @@
+<view class="container">
+  <image class="poster" src="/images/swiper1.webp"></image>
+  <text class="title">{{movie.title}}</text>
+  <view class="rate-container">
+    <l-rate score="3.6" size="22"></l-rate>
+    <text class="score">3.6</text>
+  </view>
+</view>

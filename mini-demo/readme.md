@@ -42,3 +42,14 @@ npm 安装后 还需要在 工具=> 构建npm才可以使用
 ```
   wx.setStorageSync('key', data)
 ```
+
+### 自定义组件
+
+### 自定义事件
+
+```
+  this.triggerEvent(eventName)
+
+
+  bind:eventName = ""
+```

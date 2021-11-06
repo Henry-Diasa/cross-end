@@ -1,5 +1,6 @@
 <view class="container">
   <image class="head-image" src="{{postData.imgSrc}}"></image>
+  <image bind:tap="onMusic" class="audio" src="/images/music.png"></image>
   <view class="author-date">
     <image class="avatar" src="{{postData.headImgSrc}}"></image>
     <text class="author">{{postData.author}}</text>
@@ -12,7 +13,7 @@
   <view class="tool">
     <view class="circle">
       <image wx-if="{{!collected}}" bind:tap="onCollect" class="circle-image" src="/images/star.png"></image>
-      <image class="circle-image" src="/images/chat.png"></image>
+      <image class="circle-image" bind:tap="onShare" src="/images/chat.png"></image>
     </view>
     <view class="circle-line"></view>
   </view>

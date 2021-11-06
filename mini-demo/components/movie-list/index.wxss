@@ -1,0 +1,14 @@
+/* components/movie-list/index.wxss */
+
+.container {
+  padding: 30rpx 28rpx;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: space-between;
+}

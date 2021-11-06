@@ -1,0 +1,3 @@
+<movie-list movies="{{movies}}" a-class="movie-list"></movie-list>
+<movie-list a-class="movie-list"></movie-list>
+<movie-list a-class="movie-list"></movie-list>
